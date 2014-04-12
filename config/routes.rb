@@ -1,6 +1,7 @@
 UlapWeather::Application.routes.draw do
   get "static_ulap/home"
   get "static_ulap/help"
+  get "static_ulap/about"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
