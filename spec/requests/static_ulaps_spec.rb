@@ -14,7 +14,7 @@ describe "StaticUlaps" do
 
 		it "should have the content 'Welcome'" do
 			visit '/static_ulap/home'
-			expect(page).to have_content('Welcome')
+			expect(page).not_to have_title('| Home')
 		end
 	end 
 

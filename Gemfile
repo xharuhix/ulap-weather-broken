@@ -3,6 +3,7 @@ ruby '2.0.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.1'
+# gem 'pg', '0.15.1'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -32,7 +33,11 @@ end
 
 group :development, :test do
 	gem 'sqlite3'
-	gem 'rspec-rails', '2.14.1' 
+	gem 'rspec-rails', '2.14.1'
+	gem 'guard-rspec'
+	gem 'spork-rails'
+	gem 'guard-spork'
+	gem 'childprocess'
 end
 
 group :test do
