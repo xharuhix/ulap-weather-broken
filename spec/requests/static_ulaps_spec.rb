@@ -28,10 +28,17 @@ describe "StaticUlaps" do
 
 	describe "About page" do
 
-    it "should have the content 'About ULAP'" do
-      visit '/static_ulap/about'
-      expect(page).to have_content('About ULAP')
-    end
-  end
+    	it "should have the content 'About ULAP'" do
+      		visit '/static_ulap/about'
+      		expect(page).to have_content('About ULAP')
+    	end
+  	end
+
+  	describe "Louie page" do
+  		it "should have the content 'Louie'" do
+  			visit '/static_ulap/louie'
+  			expect(page).to have_content('Louie')
+  		end
+  	end
 
 end

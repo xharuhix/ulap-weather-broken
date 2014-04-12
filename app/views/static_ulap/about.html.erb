@@ -1,3 +1,68 @@
-<% provide(:title, 'About') %>
-<h1>About ULAP</h1>
-<p>Ubiquitous Local ground surface weather data Aggregation and Processing</p>
+    <div class="jumbotron">
+        <h1>"ulap"</h1>
+        <p>A Filipino word for <strong>cloud</strong>.</p>
+        <p>Cloud activities make up for most of the atmospheric phenomenon and this project is designed to observe it. Learn more about the research and the working force behind it.</p>
+    </div>
+
+<ul class="nav nav-tabs" style="margin-bottom: 15px;">
+  <li class="active"><a href="#abstract" data-toggle="tab">Research</a></li>
+  <li class=""><a href="#team" data-toggle="tab">Members</a></li>
+  <li class=""><a href="#community" data-toggle="tab">Community</a></li>
+  <li class=""><a href="#resources" data-toggle="tab">Resources</a></li>
+</ul>
+
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade active in" id="abstract">
+    <h1>Ubiquitous Local ground surface weather data Aggregation and Processing</h1>
+    <p class="lead" align="center">Smartphone-based weather service right when you need it</p>
+    <%= image_tag("aboutCloud.png", size: "648x228", align:"center") %>
+  <!-- <p>Insert abstract here</p> -->
+  </div>
+  
+
+  <div class="tab-pane fade" id="team">
+    <h1 id="team">Members</h1>
+  <p class="lead">This project is not possible without scientists and researchers that contribute to the idea of an integrated weather service system</p>
+  <div class="list-group bs-team"> 
+     <div class="list-group-item">
+        <!-- <div class="col-sm-4"> -->
+          <ul class="list-group">
+            <li class="list-group-item">Louie Zamora</li>
+            <li class="list-group-item">Shigeru Kashihara</li>
+            <li class="list-group-item">Hiroaki Takemoto</li>
+            <li class="list-group-item">Christopher Yap</li>
+            <li class="list-group-item">Sahara Takemi</li>
+            <li class="list-group-item">Hiroaki Izumikawa</li>
+          </ul>
+        </div>
+        <p>Find more about us in <a href="http://iplab.naist.jp/research/MInT/index.php.en">Mobile Internet Technologies</a> research group page</p>
+    </div> 
+    </div>     
+  
+    <div class="tab-pane fade" id="community">
+    <h1>Community</h1>
+    <p class="lead">Stay up to date on the research developments.</p>
+  <ul>
+    <li>Read and subscribe to <a href="http://ulap-research.blogspot.jp/">The Official ULAP Research Blog</a>.</li>
+    <li>Have a question? Looking for collaborations? Drop us a message by sending us an email <a href="mailto:ulap.research@gmail.com">ulap.research(at)gmail.com</a>.</li>
+  </ul>
+  <p>You can also follow <a href="https://twitter.com/ulap_research">@ulap_research on Twitter</a> for the latest development updates.</p>
+  </div>
+
+  <div class="tab-pane fade" id="resources">
+    <h1>Other Weather Resource</h1>
+  <p class="lead">Find out more about other country's weather or the global weather in general from these links!</p>
+   <div class="list-group bs-team"> 
+     <div class="list-group-item">
+        <!-- <div class="col-sm-4"> -->
+          <ul class="list-group">
+            <li class="list-group-item"><a href="http://noah.dost.gov.ph/">DOST-Project Noah</a></li>
+            <li class="list-group-item"><a href="http://www.jma.go.jp/jma/index.html">Japan Meteorological Agency</a></li>
+            <li class="list-group-item"><a href="http://weathernews.jp/">Weathernews Channel</a></li>
+            <li class="list-group-item"><a href="http://www.rain-alarm.com/?from=chrome2">Rain Alarm</a></li>
+          </ul>
+        </div>
+    </div> 
+  </div>    
+</div>
+

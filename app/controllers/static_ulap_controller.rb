@@ -7,5 +7,8 @@ class StaticUlapController < ApplicationController
 
   def about
   end
+
+  def louie
+  end
   
 end
