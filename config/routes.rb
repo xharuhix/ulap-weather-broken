@@ -11,6 +11,11 @@ UlapWeather::Application.routes.draw do
   # root 'welcome#index'
   root 'static_ulap#home'
 
+  #for contact form
+
+  match '/contacts', to: 'contacts#new', via: 'get'
+  resources "contacts", only: [:new, :create]
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
