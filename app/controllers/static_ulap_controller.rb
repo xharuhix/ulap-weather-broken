@@ -8,6 +8,9 @@ class StaticUlapController < ApplicationController
   def about
   end
 
+  def android
+  end
+
   def louie
   end
   
