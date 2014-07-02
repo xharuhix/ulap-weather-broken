@@ -44,6 +44,7 @@ group :development, :test do
 	gem 'spork-rails'
 	gem 'guard-spork'
 	gem 'childprocess'
+	gem 'foreman'
 end
 
 group :test do
