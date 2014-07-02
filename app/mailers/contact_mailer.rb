@@ -8,9 +8,6 @@ class ContactMailer < ActionMailer::Base
     mail(to: @contact.email, subject: @contact.subject)
   end
  
-end
- 
-
 
 
 end

@@ -6,13 +6,14 @@ class ContactsController < ApplicationController
   def create
     @contact = Contact.new(params[:contact])
     @contact.request = request
-      if @contact.valid?
+    if @contact.valid?
       ContactMailer.new_message(@contact).deliver
-      redirect_to root, notice: 'Message sent'
-      else
+      redirect_to :controller=>'static_ulap', :action=>'home', notice: 'Message sent'
+    else
       flash.now[:error] = 'Cannot send message.'
       render :new
-      end
+    end
+  end
   #   if @contact.deliver
   #     flash.now[:notice] = 'Thank you for your message. We will contact you soon!'
   #   else
@@ -35,5 +36,4 @@ class ContactsController < ApplicationController
   #     flash.now.alert = "Please fill all fields."
   #     render :new
   #   end
-  end
 end
