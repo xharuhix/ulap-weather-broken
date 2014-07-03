@@ -9,12 +9,12 @@
   </div>
   <div class="navbar-collapse collapse navbar-responsive-collapse">
     <ul class="nav navbar-nav">
-      <li class="active"><a href="/static_ulap/home">Home</a></li>
-      <li><a href="/static_ulap/about">About</a></li>
-      <li><a href="/static_ulap/android">Android App</a></li>
+      <li class="<%= 'active' if current_page?('/static_ulap/home') %>"><%= link_to "Home", "/static_ulap/home" %></li>
+      <li class="<%= 'active' if current_page?('/static_ulap/about') %>"><%= link_to "About", "/static_ulap/about" %></li>
+      <li class="<%= 'active' if current_page?('/static_ulap/android') %>"><%= link_to "Android App", "/static_ulap/android" %></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="/contacts/new">Contact</a></li>
+      <li class="<%= 'active' if current_page?('/contacts/new') %>"><%= link_to "Contact", "/contacts/new" %></li>
       <li><a href="http://ulap-research.blogspot.jp/">Blog</a></li>
       <li><a href="http://iplab.naist.jp/">IPLab</a></li>
     </ul>
